@@ -951,7 +951,7 @@ Section:NewButton("Fates Admin", "penis", function()
 end)
 local Tab = Window:NewTab("Misc")
 local Section = Tab:NewSection("Misc Things")
-Section:NewButton("Anti-Blacklist", "*CLICK BEFORE GETTING BLACKLISTED*", function()
+Section:NewButton("Anti-Blacklist", "*disables blacklist*", function()
     for i, v in pairs(getconnections(game.ReplicatedStorage.BoothBlacklist.OnClientEvent)) do
 		v:Disable()
 	 end
