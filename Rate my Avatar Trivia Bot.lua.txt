@@ -114,7 +114,7 @@ function getBooth()
     return closestBooth
 end
 
-getgenv().correctAnswer = "Made by Sw1ndler"
+getgenv().correctAnswer = "Good Luck"
 getgenv().correctPlayer = nil
 getgenv().correctPlayerScore = nil
 
