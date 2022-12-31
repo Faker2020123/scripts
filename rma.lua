@@ -966,6 +966,9 @@ for _, Child in next, game.Players:GetPlayers() do
    end
 end
 end)
+Section:NewButton("ButtonText", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/8msv/scripts/main/Rate%20my%20Avatar%20Trivia%20Bot.lua.txt'))()
+end)
 local Tab = Window:NewTab("Others")
 local Section = Tab:NewSection("Things")
 Section:NewButton("Rejoin", "rejoins same server", function()
