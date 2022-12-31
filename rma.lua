@@ -951,10 +951,20 @@ Section:NewButton("Fates Admin", "penis", function()
 end)
 local Tab = Window:NewTab("Misc")
 local Section = Tab:NewSection("Misc Things")
-Section:NewButton("Anti-Blacklist", "*disables blacklist*", function()
+Section:NewButton("Anti-Blacklist", "*CLICK BEFORE GETTING BLACKLISTED*", function()
     for i, v in pairs(getconnections(game.ReplicatedStorage.BoothBlacklist.OnClientEvent)) do
 		v:Disable()
 	 end
+end)
+Section:NewButton("Rate all 1", "Rates everybody a 1", function()
+    local ReplicatedStorage = game:GetService'ReplicatedStorage'
+local PostRating = ReplicatedStorage.PostRating
+
+for _, Child in next, game.Players:GetPlayers() do
+   if Child ~= game.Players.LocalPlayer then
+       PostRating:fireServer(Child, 1)
+   end
+end
 end)
 local Tab = Window:NewTab("Others")
 local Section = Tab:NewSection("Things")
