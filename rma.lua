@@ -952,7 +952,9 @@ end)
 local Tab = Window:NewTab("Misc")
 local Section = Tab:NewSection("Misc Things")
 Section:NewButton("Anti-Blacklist", "*CLICK BEFORE GETTING BLACKLISTED*", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/BK0PX01c"))()
+    for i, v in pairs(getconnections(game.ReplicatedStorage.BoothBlacklist.OnClientEvent)) do
+		v:Disable()
+	 end
 end)
 local Tab = Window:NewTab("Others")
 local Section = Tab:NewSection("Things")
